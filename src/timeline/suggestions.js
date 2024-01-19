@@ -14,8 +14,10 @@ function Suggestions() {
     })
       .then(response => response.json())
       .then(data => {
-        console.log(data); // Log the fetched data
+        console.log('Fetched data:', data);
         setsuggestedUsers(data.data); // Update the state
+       // console.log('Suggested users:', suggestedUsers);
+
       })
       .catch(error => {
         console.error('Error fetching suggested users:', error);

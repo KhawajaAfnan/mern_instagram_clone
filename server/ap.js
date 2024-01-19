@@ -21,9 +21,9 @@ mongoose.connect('mongodb://127.0.0.1:27017/ap', {
 
 // Define the Item model
 const itemSchema = new mongoose.Schema({
-  user: String,        // Corrected data type from 'string' to 'String'
-  userimg: String,    // Corrected data type from 'string' to 'String'
-  postImage: String,  // Corrected data type from 'string' to 'String'
+  user: String,        
+  userimg: String,   
+  postImage: String, 
   likes: Number,
   timestamp: String,
 });

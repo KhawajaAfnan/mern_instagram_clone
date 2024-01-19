@@ -13,7 +13,6 @@ function Homepage() {
   const [Rusername, setRUsername] = useState('');  
   const [Rpassword, setRpassword] = useState('');
   const [CRpassword, setCRpassword] = useState('');
-  const [ setisRegistered] = useState(false);
   
   const [refreshTimeline, setRefreshTimeline] = useState(false);
 
@@ -40,8 +39,10 @@ function Homepage() {
         if (response.ok) {
           console.log('User registered successfully');
           setLoggedInUsername(Rusername);
-          setisRegistered(true);
-          setIsLoggedIn(true);
+          window.location.reload();
+
+          
+
         } else {
           console.error('Failed to register user');
         }
