@@ -165,7 +165,6 @@ app.post('/register', async (req, res) => {
 });
 
 // User login
-// User login
 app.post('/login', async (req, res) => {
   try {
     const { username, password } = req.body;
